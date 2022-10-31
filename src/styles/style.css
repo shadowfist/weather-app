@@ -1,0 +1,239 @@
+/* Common */
+
+body {
+    background-color: #b5d8ff;
+    font-family: 'Nunito', sans-serif;
+    min-height: 1060px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Common - END */
+
+/* Custom styles */
+
+.app-container {
+    padding: 3rem 2rem;
+    max-width: 1366px;
+    min-height: 860px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.sidebar {
+    color: #fff;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 100%;
+    max-width: 28%;
+    min-height: 100%;
+    padding: 20px 25px;
+    background-color: #5c9ce5;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    box-shadow: -1px 1px 5px #888888;
+}
+
+.sidebar>section {
+    margin: 5px 15px;
+}
+
+.sidebar .action-buttons {
+    margin: 15px 15px;
+    padding-right: 35px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unit-toggle button {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+section.location-details,
+section.location-changer {
+    margin-top: 2rem;
+    padding-left: 5px;
+    padding-right: 35px;
+    display: flex;
+}
+
+.location-details {
+    margin: 15px 15px;
+    padding-left: 5px;
+    padding-right: 35px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.location-name {
+    font-size: large;
+}
+
+.location-changer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.location-changer .carosel,
+.location-changer .current-forecast {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-changer .carosel {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-changer .current-forecast {
+    align-items: center;
+}
+
+.carosel .temperature {
+    font-size: 3rem;
+}
+
+.current-forecast p {
+    font-size: larger;
+}
+
+/* Sidebar - END */
+
+/* Weather information */
+
+.weather-info {
+    width: 100%;
+    max-width: 68%;
+    min-height: 100%;
+    padding: 20px 25px;
+    background-color: #e4f1ff;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.weather-info > header,
+.weather-info > section {
+    margin: 5px 15px;
+}
+
+.weather-info header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-info header .account {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hourly weather */
+
+.hourly-report {
+    margin: 10px 10px;
+    padding: 10px 25px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.hourly-report header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.hourly-report header button {
+    display: flex;
+    align-items: center;
+}
+
+.hourly-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.hourly-cards>.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 20px;
+    min-width: 90px;
+}
+
+.card-precipitation {
+    display: flex;
+    align-items: center;
+}
+
+/* Hourly weather - END */
+
+/* Detailed weather */
+
+.detailed-weather .detail-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-cards .card {
+    width: 25%;
+    margin: 15px 0px;
+    padding: 10px 25px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.card-title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-data {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Detailed weather - END */
+
+/* Weather information - END */

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Application" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+    </style>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/material-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <main class="app-container">
+        <section class="sidebar">
+            <section class="action-buttons">
+                <div class="add-button">
+                    <button>
+                        <span class="material-icons material-icons-round md-light md-36">
+                            add_box
+                        </span>
+                    </button>
+                </div>
+                <nav class="nav-pills"></nav>
+                <div class="unit-toggle">
+                    <button>
+                        &deg;C&nbsp;
+                        <span class="material-icons material-icons-outlined md-light md-48">
+                            toggle_off
+                        </span>
+                        &nbsp;&deg;F
+                    </button>
+                </div>
+            </section>
+            <section class="location-details">
+                <section class="location-date">
+                    <div class="location-name"><span class="material-icons material-icons-outlined md-18">
+                            near_me
+                        </span>
+                        Chennai, Tamil Nadu</div>
+                    <div class="date">31 Oct 2021</div>
+                </section>
+                <section class="sunrise-sunset">
+                    <div class="sunrise">7:19</div>
+                    <div class="sunset">7:32</div>
+                </section>
+            </section>
+            <section class="location-changer">
+                <div class="carosel">
+                    <button class="left-button"><span
+                            class="material-icons material-icons-outlined md-24 md-light md-inactive">
+                            arrow_back_ios
+                        </span>
+                    </button>
+                    <div class="temperature">
+                        <h1>27<span>&deg;</span></h1>
+                    </div>
+                    <button class="right-button"><span
+                            class="material-icons material-icons-outlined md-24 md-light md-inactive">
+                            arrow_forward_ios
+                        </span>
+                    </button>
+                </div>
+                <div class="current-forecast">
+                    <span class="material-icons material-icons-outlined md-24 orange600">
+                        wb_sunny
+                    </span>
+                    <p> &nbsp; Sunny</p>
+                </div>
+            </section>
+        </section>
+        <section class="weather-info">
+            <header>
+                <section class="welcome-message">
+                    <h3>Welcome back Isabella</h3>
+                    <p>Check out today's weather information</p>
+                </section>
+                <section class="account">
+                    <div class="options-button">
+                        <button><span class="material-icons material-icons-outlined md-36">
+                                more_horiz
+                            </span>
+                        </button>
+                    </div>
+                    <div class="user-icon">
+                        <button>
+                            <span class="material-icons material-icons-outlined md-48">
+                                account_circle
+                            </span>
+                        </button>
+                    </div>
+                </section>
+            </header>
+            <section class="hourly-report">
+                <header>
+                    <div>
+                        <p>Upcoming hours</p>
+                    </div>
+                    <button>Next days
+                        <span class="material-icons material-icons-outlined">
+                            chevron_right
+                        </span>
+                    </button>
+                </header>
+                <section class="graph">
+                    <div class="hourly-cards">
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>Now</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 orange600">
+                                    brightness_low
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>27&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                23%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>11:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 orange600">
+                                    brightness_low
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>28&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                29%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>12:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 orange600">
+                                    brightness_high
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>27&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                58%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>13:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 grey600">
+                                    cloud
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>29&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                75%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>14:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 orange600">
+                                    brightness_low
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>30&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                33%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>15:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 grey600">
+                                    cloud
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>29&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                20%
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-time">
+                                <h5>16:00</h5>
+                            </div>
+                            <div class="card-weather-indicator">
+                                <span class="material-icons material-icons-round md-36 orange600">
+                                    brightness_low
+                                </span>
+                            </div>
+                            <div class="card-temperature">
+                                <h4>28&deg;</h4>
+                            </div>
+                            <div class="card-precipitation">
+                                <span class="material-icons material-icons-round md-24 blue600">
+                                    grain
+                                </span>
+                                43%
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="detailed-weather">
+                <header class="title">
+                    <h3>More details of today's weather</h3>
+                </header>
+                <div class="detail-cards">
+                    <div class="card humidity">
+                        <div class="card-title">
+                            <h3>Humidity</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                water_drop
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>82%</h2>
+                            <p>bad</p>
+                        </div>
+                    </div>
+                    <div class="card wind">
+                        <div class="card-title">
+                            <h3>Wind</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                air
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>8km/h</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card precipitation">
+                        <div class="card-title">
+                            <h3>Precipitation</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                grain
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>1.4 cm</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card uv-index">
+                        <div class="card-title">
+                            <h3>UV Index</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                flare
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>4</h2>
+                            <p>medium</p>
+                        </div>
+                    </div>
+                    <div class="card feels-like">
+                        <div class="card-title">
+                            <h3>Feels like</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                thermostat
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>30&deg;</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card chance-of-rain">
+                        <div class="card-title">
+                            <h3>Chance of rain</h3>
+                            <span class="material-icons material-icons-round md-36 blue600">
+                                thunderstorm
+                            </span>
+                        </div>
+                        <div class="card-data">
+                            <h2>42%</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
